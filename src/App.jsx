@@ -7,6 +7,8 @@ import ContactPage from "./pages/ContactPage"
 import FractionalCxoPage from "./pages/FractionalCxoPage"
 import WebsiteDevelopmentPage from "./pages/WebsiteDevelopmentPage"
 import { Toaster } from "react-hot-toast"
+import PrivacyPolicyPage from "./pages/PrivacyPolicyPage"
+import TermsConditionsPage from "./pages/TermsConditionsPage"
 // import FaqPage from "./pages/FaqPage"
 
 export default function App() {
@@ -41,6 +43,14 @@ export default function App() {
               <Route
                 path="/websitedevelopment"
                 element={<WebsiteDevelopmentPage />}
+              />
+              <Route
+                path="/privacy-policy"
+                element={<PrivacyPolicyPage />}
+              />
+              <Route
+                path="/terms-of-service"
+                element={<TermsConditionsPage />}
               />
             </Routes>
           </main>
