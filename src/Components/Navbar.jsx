@@ -18,8 +18,6 @@ const Navbar = () => {
       to: "/websitedevelopment",
       isScroll: false,
     },
-    { label: "Privacy", to: "/privacy-policy", isScroll: false },
-    { label: "Terms", to: "/terms-of-service", isScroll: false },
   ]
 
   const scrollToServices = () => {

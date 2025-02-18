@@ -24,7 +24,7 @@ const SuccessMessage = ({ onReset }) => (
     </h2>
     <p className="text-lg text-[#000048]/80 text-center max-w-md">
       Your subscription request has been successfully received. We will get back
-      to you shortly with further details.
+      to you shortly.
     </p>
     <motion.button
       whileHover={{ scale: 1.02 }}

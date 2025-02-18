@@ -1,4 +1,3 @@
-import React from "react"
 import { motion } from "framer-motion"
 import { FaCalendar } from "react-icons/fa"
 import { termsData } from "./TermsConditionData"
@@ -30,18 +29,18 @@ export default function TermsConditions() {
         initial="hidden"
         animate="visible"
         variants={containerVariants}
-        className="max-w-4xl mx-auto px-6 sm:px-8 md:px-12 lg:px-16 py-12"
+        className="mx-auto px-16 md:px-24 lg:px-32 py-12 max-w-5xl"
       >
-        <div className="text-center mb-16">
-          <h1 className="text-3xl sm:text-4xl font-bold mb-6 text-[#000048]">
+        <div className="mb-8">
+          <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-[#000048]">
             {termsData.title}
           </h1>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-[#0b60a0]">
-            <div className="flex items-center gap-2">
+          <div className="gap-4 text-[#0b60a0] text-lg font-normal">
+            <div className="flex items-center gap-2 mb-2">
               <FaCalendar className="text-[#0b60a0]" />
               <span>Effective Date: {termsData.metadata.effectiveDate}</span>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 mb-4">
               <FaCalendar className="text-[#0b60a0]" />
               <span>Last Updated: {termsData.metadata.lastUpdated}</span>
             </div>
@@ -50,7 +49,7 @@ export default function TermsConditions() {
 
         <motion.div
           variants={itemVariants}
-          className="prose max-w-none mb-12"
+          className="prose max-w-none mb-6"
         >
           <p className="text-[#0b60a0] whitespace-pre-line text-base sm:text-lg leading-relaxed max-w-3xl mx-auto">
             {termsData.introduction}
@@ -61,9 +60,9 @@ export default function TermsConditions() {
           <motion.section
             key={section.id}
             variants={itemVariants}
-            className="space-y-4 mb-12 max-w-3xl mx-auto"
+            className="space-y-4 mb-4 max-w-3xl mx-auto"
           >
-            <h2 className="text-xl sm:text-2xl font-semibold text-[#000048] border-b border-gray-200 pb-2">
+            <h2 className="text-2xl sm:text-3xl font-semibold text-[#000048]">
               {section.id}. {section.title}
             </h2>
             <div className="space-y-4">

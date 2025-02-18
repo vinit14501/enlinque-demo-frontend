@@ -8,13 +8,13 @@ const Footer = () => {
   const location = useLocation()
 
   const services = [
+    { label: "Website Development", path: "/websitedevelopment" },
     { label: "Fractional CxO", path: "/fractionalCxO" },
     { label: "IT Consulting", path: "/#services" },
     { label: "Software Development", path: "/#services" },
     { label: "Digital Marketing", path: "/#services" },
     { label: "E-Commerce", path: "/#services" },
     { label: "Digital Transformation", path: "/#services" },
-    { label: "Website Development", path: "/#services" },
     { label: "Agile Implementation", path: "/#services" },
   ]
 

@@ -5,7 +5,7 @@ export const termsData = {
     lastUpdated: "12/1/2024",
   },
   introduction:
-    'Welcome to Enlinque! These Terms and Conditions ("Terms") govern your access to and use of our website and our services, including but not limited to IT consulting, Fractional CxO services, digital marketing, software development, eCommerce solutions, and digital transformation.\n\nBy using our website or engaging our services, you agree to be bound by these Terms. If you do not agree, please do not use our services.',
+    'Welcome to Enlinque! These Terms and Conditions ("Terms") govern your access to and use of our website and our services, including but not limited to IT consulting, Fractional CxO services, digital marketing, software development, eCommerce solutions, and digital transformation.\nBy using our website or engaging our services, you agree to be bound by these Terms. If you do not agree, please do not use our services.',
   sections: [
     {
       id: 1,
