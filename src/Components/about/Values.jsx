@@ -1,4 +1,3 @@
-import React from "react"
 import { motion } from "framer-motion"
 import { FaCheckCircle, FaSync, FaLightbulb, FaHandshake } from "react-icons/fa"
 import hero1 from "../../assets/hero1.jpg"
