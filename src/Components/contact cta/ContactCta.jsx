@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 import { BsArrowRight } from "react-icons/bs"
 import { useNavigate } from "react-router-dom"
 
-const Cta2 = () => {
+const ContactCta = () => {
   const navigate = useNavigate()
 
   const containerVariants = {
@@ -65,4 +65,4 @@ const Cta2 = () => {
   )
 }
 
-export default Cta2
+export default ContactCta
