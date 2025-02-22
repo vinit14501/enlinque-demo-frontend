@@ -1,12 +1,13 @@
 import { motion } from "framer-motion"
 import { BsArrowRight } from "react-icons/bs"
-import { FaArrowRight } from "react-icons/fa"
-import digitalmarketing from "../../../assets/digitalmarketinghero.webp"
+import { FaArrowRight, FaCheckCircle } from "react-icons/fa"
 import ctaBackground from "../../../assets/digitalmarketingbanner1.webp"
 import cta3 from "../../../assets/digitalmarketingbanner2.webp"
 import ContactCta from "../../contact cta/ContactCta"
 import { digitalMarketingServices } from "./digitalMarketingServices"
 import { useNavigate } from "react-router-dom"
+import SocialMediaSection from "./social media/SocialMediaSection"
+import MarketingComponentsSection from "./MarketingComponentsSection"
 
 const DigitalMarketing = () => {
   const navigate = useNavigate()
@@ -23,7 +24,7 @@ const DigitalMarketing = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url(${digitalmarketing})`,
+            backgroundImage: `url(${ctaBackground})`,
           }}
         >
           <div className="absolute inset-0 bg-black/60" />
@@ -33,7 +34,7 @@ const DigitalMarketing = () => {
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto text-center">
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 md:mb-6 text-white">
-                Strategic Digital Marketing Solutions
+                Digital Marketing
               </h1>
               <div className="space-y-2 sm:space-y-3 md:space-y-4 mb-4 sm:mb-6 md:mb-8">
                 <p className="text-base sm:text-lg md:text-xl text-white">
@@ -42,8 +43,8 @@ const DigitalMarketing = () => {
                   conversions.
                 </p>
                 <p className="text-base sm:text-lg md:text-xl text-white">
-                  We optimize every step of the customer journey to ensure your
-                  brand stands out in a competitive market.
+                  We optimize the customer journey to ensure your brand stands
+                  out in a <span>competitive market.</span>
                 </p>
               </div>
               <motion.button
@@ -63,47 +64,49 @@ const DigitalMarketing = () => {
       <div className="relative overflow-hidden bg-white">
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16 lg:py-20">
           <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-normal text-black tracking-wide leading-relaxed max-w-4xl mx-auto font-raleway">
-            Build a brand that stands out—engage, attract, and grow with
-            data-driven digital marketing that delivers results. From awareness
-            to advocacy - let us craft a tailored digital strategy that drives
-            results and makes a lasting impact.
+            <span className="text-[#0b60a0] font-bold">Build a brand</span> that
+            stands out. From awareness to advocacy - we craft tailored{" "}
+            <span className="text-[#0b60a0] font-bold">digital strategies</span>{" "}
+            that create{" "}
+            <span className="text-[#0b60a0] font-bold">lasting impact</span>.
           </p>
         </div>
       </div>
 
       {/* First CTA Banner */}
-      <section
-        className="px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20 lg:py-24 bg-cover bg-center bg-no-repeat relative"
-        style={{
-          backgroundImage: `url(${ctaBackground})`,
-        }}
-      >
-        <div className="absolute inset-0 bg-black/50" />
-        <div className="max-w-6xl mx-auto text-center relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-white">
-              Looking to design and schedule webinars, create engaging podcasts,
-              or produce high-quality videos? We&apos;ll bring your vision to
-              life.
-            </h2>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-white">
-              We&apos;ll bring your vision to life.
-            </h2>
+      <section className="px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20 lg:py-24 relative overflow-hidden">
+        {/* Background with multiple layers */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#000048] via-blue-600 to-[#0b60a0]" />
+        <div className="absolute inset-0 bg-grid-white/[0.05]" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#000048]" />
+
+        <div className="max-w-6xl mx-auto relative z-10">
+          <div className="flex justify-between items-center">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="max-w-2xl"
+            >
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-white drop-shadow-md">
+                Webinars, Podcasts & Videos
+              </h2>
+              <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-white/90">
+                Strategic Content Creation to maximize outreach
+              </h2>
+            </motion.div>
+
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-blue-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg text-base sm:text-lg font-semibold shadow-lg hover:shadow-xl transition-shadow duration-300 flex items-center gap-2 sm:gap-3 mx-auto"
+              className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 text-base sm:text-lg font-semibold font-raleway text-[#000048] bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 gap-2"
               onClick={() => navigate("/contact")}
             >
               <span>Reach out to us</span>
               <BsArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
             </motion.button>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -128,14 +131,15 @@ const DigitalMarketing = () => {
                 </h3>
 
                 <div className="mt-4">
-                  <ul className="list-disc pl-5 space-y-2">
+                  <ul className="space-y-3">
                     {service.points &&
                       service.points.map((point, pointIndex) => (
                         <li
                           key={pointIndex}
-                          className="text-base text-black"
+                          className="flex items-start gap-2 text-base text-black"
                         >
-                          {point}
+                          <FaCheckCircle className="text-[#0b60a0] mt-1 flex-shrink-0" />
+                          <span>{point}</span>
                         </li>
                       ))}
                   </ul>
@@ -173,11 +177,28 @@ const DigitalMarketing = () => {
                 className="bg-blue-600 text-white font-semibold font-raleway py-2 px-4 sm:px-5 rounded-lg inline-flex items-center gap-1 sm:gap-2 text-sm sm:text-base transition-all duration-300"
                 onClick={() => navigate("/contact")}
               >
-                Contact us <FaArrowRight className="text-base sm:text-base" />
+                Request a Quote{" "}
+                <FaArrowRight className="text-base sm:text-base" />
               </motion.button>
             </div>
           </div>
         </motion.div>
+      </div>
+
+      {/* Marketing Components Section */}
+      <MarketingComponentsSection />
+
+      {/* Social Media Section */}
+      <SocialMediaSection />
+
+      {/* Second Text Section */}
+      <div className="relative overflow-hidden bg-white">
+        <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16 lg:py-20">
+          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-normal text-black tracking-wide leading-relaxed max-w-4xl mx-auto font-raleway">
+            Custom Branding for Businesses of All Sizes Transforming businesses
+            with strategic branding that stands out and drives growth.
+          </p>
+        </div>
       </div>
 
       {/* Connect Section */}
