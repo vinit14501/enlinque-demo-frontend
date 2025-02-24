@@ -88,7 +88,10 @@ const PlanModal = ({ isOpen, onClose, selectedPlan }) => {
         `${import.meta.env.VITE_API_BASE_URL}/api/forms/plan`,
         {
           ...formData,
-          selectedPlan,
+          selectedPlan: {
+            ...selectedPlan,
+            isStartingPrice: selectedPlan.name === "Advanced",
+          },
         },
         {
           headers: {
@@ -162,6 +165,8 @@ const PlanModal = ({ isOpen, onClose, selectedPlan }) => {
       placeholder: "Phone Number *",
     },
   ]
+
+  const isAdvancedPlan = selectedPlan.name === "Advanced"
 
   return (
     <AnimatePresence mode="wait">
@@ -268,6 +273,11 @@ const PlanModal = ({ isOpen, onClose, selectedPlan }) => {
                     </div>
 
                     <div className="bg-white/10 backdrop-blur-sm border border-white/10 rounded-lg p-4 sm:p-6">
+                      {isAdvancedPlan && (
+                        <span className="block text-white/80 text-sm mb-1">
+                          Starting at
+                        </span>
+                      )}
                       <div className="flex items-baseline gap-2">
                         <span className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
                           ${selectedPlan.price}
