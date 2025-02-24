@@ -200,10 +200,21 @@ const DigitalMarketing = () => {
       <div className="relative overflow-hidden bg-white">
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 md:py-8 lg:py-10">
           <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-normal text-black tracking-wide leading-relaxed max-w-4xl mx-auto font-raleway">
-            Custom Branding for Businesses of All Sizes Transforming businesses
-            with strategic branding that stands out and drives growth.
+            Custom Branding for{" "}
+            <span className="text-[#0b60a0] font-bold">
+              Businesses of All Sizes
+            </span>{" "}
+            Transforming businesses with{" "}
+            <span className="text-[#0b60a0] font-bold">strategic branding</span>{" "}
+            that stands out and{" "}
+            <span className="text-[#0b60a0] font-bold">drives growth</span>.
           </p>
         </div>
+      </div>
+
+      {/* More Space Area */}
+      <div className="relative overflow-hidden bg-white">
+        <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 md:py-8 lg:py-10"></div>
       </div>
 
       {/* Connect Section */}

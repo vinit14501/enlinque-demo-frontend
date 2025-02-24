@@ -1,30 +1,35 @@
 import demo from "../../../../assets/digitalmarketinghero.webp"
+import building from "../../../../assets/building2.jpg"
+import writing from "../../../../assets/writing.jpg"
+import branding from "../../../../assets/branding.jpg"
+import analytics from "../../../../assets/analytics.jpg"
+import social from "../../../../assets/social.jpg"
 
 const SocialMediaDesktop = () => {
   const panels = [
     {
       title: "Social media platforms",
-      image: demo,
+      image: social,
       alt: "Corporate Branding",
     },
     {
       title: "SEO",
-      image: demo,
+      image: building,
       alt: "Hotel Branding",
     },
     {
       title: "Content writing",
-      image: demo,
+      image: writing,
       alt: "eCommerce Branding",
     },
     {
       title: "Analytics",
-      image: demo,
+      image: analytics,
       alt: "Healthcare Branding",
     },
     {
       title: "Branding",
-      image: demo,
+      image: branding,
       alt: "Construction Company Branding",
     },
   ]
@@ -50,7 +55,7 @@ const SocialMediaDesktop = () => {
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute bottom-0 left-0 right-0 p-4">
-                  <h3 className="text-2xl lg:text-3xl font-bold text-white text-center mb-32">
+                  <h3 className="text-2xl lg:text-3xl font-bold text-[#000048] text-center mb-32">
                     {panel.title}
                   </h3>
                 </div>

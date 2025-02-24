@@ -1,30 +1,35 @@
 import demo from "../../../../assets/digitalmarketinghero.webp"
+import building from "../../../../assets/building2.jpg"
+import writing from "../../../../assets/writing.jpg"
+import branding from "../../../../assets/branding.jpg"
+import analytics from "../../../../assets/analytics.jpg"
+import social from "../../../../assets/social.jpg"
 
 const SocialMediaMobile = () => {
   const panels = [
     {
       title: "Social media platforms",
-      image: demo,
+      image: social,
       alt: "Corporate Branding",
     },
     {
       title: "SEO",
-      image: demo,
+      image: building,
       alt: "Hotel Branding",
     },
     {
       title: "Content writing",
-      image: demo,
+      image: writing,
       alt: "eCommerce Branding",
     },
     {
       title: "Analytics",
-      image: demo,
+      image: analytics,
       alt: "Healthcare Branding",
     },
     {
       title: "Branding",
-      image: demo,
+      image: branding,
       alt: "Construction Company Branding",
     },
   ]
