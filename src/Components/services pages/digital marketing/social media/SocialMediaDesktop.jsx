@@ -1,5 +1,4 @@
-import demo from "../../../../assets/digitalmarketinghero.webp"
-import building from "../../../../assets/building2.jpg"
+import seo from "../../../../assets/seo.webp"
 import writing from "../../../../assets/writing.jpg"
 import branding from "../../../../assets/branding.jpg"
 import analytics from "../../../../assets/analytics.jpg"
@@ -14,7 +13,7 @@ const SocialMediaDesktop = () => {
     },
     {
       title: "SEO",
-      image: building,
+      image: seo,
       alt: "Hotel Branding",
     },
     {
