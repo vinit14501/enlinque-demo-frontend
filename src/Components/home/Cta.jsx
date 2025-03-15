@@ -13,6 +13,7 @@ export default function Cta() {
         style={{
           backgroundImage: `url(${ctaBackground})`,
         }}
+        aria-label="Fractional CxO Services Section"
       >
         <div className="absolute inset-0 bg-black/50" />
         <div className="max-w-6xl mx-auto text-center relative z-10">
@@ -22,7 +23,10 @@ export default function Cta() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-white">
+            <h2
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-white"
+              id="fractional-cxo-heading"
+            >
               Explore Our Fractional CxO Services
             </h2>
             <motion.button
@@ -30,6 +34,8 @@ export default function Cta() {
               whileTap={{ scale: 0.95 }}
               className="bg-blue-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg text-base sm:text-lg font-semibold shadow-lg hover:shadow-xl transition-shadow duration-300 flex items-center gap-2 sm:gap-3 mx-auto"
               onClick={() => navigate("/fractionalCxO")}
+              aria-label="Learn more about our Fractional CxO Services"
+              aria-labelledby="fractional-cxo-heading"
             >
               <span>Get Started</span>
               <BsArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />

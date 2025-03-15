@@ -64,16 +64,20 @@ export default function Services() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
           {services.map((service, index) => (
-            <div
+            <article
               key={index}
               className="bg-white border border-gray-200 p-6 rounded-lg shadow-md hover:shadow-xl transition-all group"
+              aria-labelledby={`service-title-${index}`}
             >
               <service.icon className="text-3xl md:text-4xl mb-4 text-[#0b60a0] group-hover:text-[#0b60a0] transition-colors" />
-              <h3 className="text-lg md:text-xl font-semibold mb-3 text-[#0b60a0]">
+              <h3
+                className="text-lg md:text-xl font-semibold mb-3 text-[#0b60a0]"
+                id={`service-title-${index}`}
+              >
                 {service.title}
               </h3>
               <p className="text-base text-black">{service.description}</p>
-            </div>
+            </article>
           ))}
         </div>
       </div>

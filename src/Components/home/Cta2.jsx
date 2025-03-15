@@ -33,11 +33,13 @@ const Cta2 = () => {
       animate="visible"
       variants={containerVariants}
       className="w-full py-8 sm:py-10 md:py-12 bg-[#0b60a0] sticky top-0 z-50"
+      aria-label="Contact CTA"
     >
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <motion.h2
           variants={itemVariants}
           className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold font-raleway text-white mb-3 sm:mb-4"
+          id="contact-cta-heading"
         >
           Ready to Transform Your Ideas Into Reality?
         </motion.h2>
@@ -56,6 +58,7 @@ const Cta2 = () => {
           whileTap={{ scale: 0.95 }}
           className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 text-base sm:text-lg font-semibold font-raleway text-[#000048] bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 gap-2"
           onClick={() => navigate("/contact")}
+          aria-labelledby="contact-cta-heading"
         >
           Get in Touch
           <BsArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />

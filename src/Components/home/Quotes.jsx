@@ -22,7 +22,10 @@ export default function Quotes() {
           `}
         >
           <div className="border-t border-white mb-3 sm:mb-4 transition-all duration-1000"></div>
-          <div className="relative px-8 sm:px-10 md:px-12">
+          <div
+            className="relative px-8 sm:px-10 md:px-12"
+            aria-label="Inspirational Quote by Walt Disney"
+          >
             <FaQuoteLeft className="absolute -left-2 sm:-left-4 md:-left-8 top-0 text-white text-xl sm:text-2xl md:text-3xl" />
             <FaQuoteRight className="absolute -right-2 sm:-right-4 md:-right-8 top-0 text-white text-xl sm:text-2xl md:text-3xl" />
             <p

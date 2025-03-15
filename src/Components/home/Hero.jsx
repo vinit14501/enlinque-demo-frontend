@@ -86,6 +86,7 @@ const Hero = () => {
         <div className="w-full lg:w-1/2 space-y-4 mb-16 text-center lg:text-left">
           <AnimatePresence mode="wait">
             <motion.h1
+              id="hero-heading"
               key={carouselContent[activeIndex].header}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -116,6 +117,7 @@ const Hero = () => {
               key={section.navWord}
               onClick={() => handleSectionClick(index)}
               className="relative group"
+              aria-labelledby="hero-heading"
             >
               {/* Desktop Navigation */}
               <span className="hidden lg:block text-sm sm:text-base font-bold font-raleway tracking-wider py-12 text-white">
